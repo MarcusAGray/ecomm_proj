@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Outlet, Link } from "react-router-dom";
-import { Context } from './Context';
+import { Context } from '../Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 

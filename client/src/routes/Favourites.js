@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { Context } from './Context';
-import ProductDisplay from './ProductDisplay';
+import { Context } from '../Context';
+import ProductDisplay from '../components/ProductDisplay';
 
 function Favourites() {
 

@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
 import { Context } from '../Context';
-import ProductImage from '../ProductImage';
+import ProductImage from '../components/ProductImage';
 
 function Product(props) {
 

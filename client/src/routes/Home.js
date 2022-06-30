@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import Products from './Products';
+import Products from '../components/Products';
 
 function Home() {
 

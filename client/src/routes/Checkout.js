@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Context } from './Context';
+import { Context } from '../Context';
 
 function Checkout() {
 

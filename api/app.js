@@ -12,7 +12,6 @@ const products = require('./routes/products')
 app.use(express.json());
 app.use(cors());
 
-
 //routes
 app.use("/testAPI", testAPIRouter)
 app.use('/api/v1/products', products);

@@ -17,44 +17,70 @@ body {
 
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 header {
-  background-color: var(--dark-blue);
-  height: 100px;
+  height: 500px;
   width: 100%;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+
+  background: linear-gradient( rgba(0, 0, 0, 0.9), 
+                              rgba(0, 0, 0, 0.9) ), 
+  url("https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_960_720.jpg");
+
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .heading {
   color: white;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 nav {
   background-color: var(--light-blue);
-  height: 40px;
+  height: 50px;
   border-bottom: solid 2px var(--dark-grey);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
 }
+
+
 
 .nav-one {
   list-style: none;
   display: inline;
-  margin-left: 15px;
-
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav-one * {
-  display: inline-block;
-  margin-right: 5px;
+  /* display: inline-block; */
+  padding: 0 5px;
   text-decoration: none;
-  height: 100%;
   color: white;
-  padding: 5px 3px;
+  /* height: 100%; */
+  /* padding: 8px 3px; */
+
 }
 
 
 .nav-two {
-  float: right;
+  /* float: right; */
   height: 100%;
 }
 
@@ -67,10 +93,8 @@ nav {
 .cart-btn {
   margin-right: 20px;
   height: 100%;
-  border: none;
   background-color: transparent;
   color: white;
-  cursor: pointer;
 }
 
 
@@ -175,8 +199,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  border: none;
-  cursor: pointer;
   background-color: white;
   border-radius: 50%;
   margin: 4px;
@@ -264,6 +286,7 @@ body {
   position: absolute;
   bottom: 40px;
   margin-left: 10px;
+  display: flex;
 }
 
 .cart-btn-container * {
@@ -346,4 +369,14 @@ body {
 #total {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+#cart-close-btn {
+  
+}
+
+.x-icon {
+  width: 15px;
+  height: 15px;
+  color: red;
 }

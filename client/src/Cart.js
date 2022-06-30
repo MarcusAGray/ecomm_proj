@@ -2,6 +2,10 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Context } from './Context';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faX } from '@fortawesome/free-solid-svg-icons'
+
+
 function Cart(props) {
 
   const {cartItems, 
@@ -29,7 +33,9 @@ function Cart(props) {
       <div className='cart-heading'>
         <h1>Cart</h1>
         <div>
-          {pathName != '/checkout' && <button onClick={toCheckout}>Go to Checkout</button>}
+          <button id='cart-close-btn' onClick={() => setIsCartDisplayed(false)}><FontAwesomeIcon icon={faX} className='x-icon'/></button>
+
+          {/* {pathName != '/checkout' && <button onClick={toCheckout}>Go to Checkout</button>} */}
         </div>
       </div>
       <div className='cart-item-container' style={{msOverflowY: 'scroll', height: '380px'}}>
@@ -48,7 +54,10 @@ function Cart(props) {
       </div>
       <div className='cart-btn-container'>
           <button onClick={emptyCart}>Empty Cart</button>
-          <button onClick={() => setIsCartDisplayed(false)}>Close</button>
+          <div>
+            {pathName != '/checkout' && <button onClick={toCheckout}>Go to Checkout</button>}
+          </div>
+          {/* <button id='cart-close-btn' onClick={() => setIsCartDisplayed(false)}><FontAwesomeIcon icon={faX}/></button> */}
       </div>
 
 

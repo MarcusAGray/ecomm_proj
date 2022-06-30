@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import {Routes, Route} from "react-router-dom";
 
-import Nav from "./Nav";
-import NotFound from "./NotFound";
-import Home from './Home'
-import About from './About'
+import Nav from "./routes/Nav";
+import NotFound from "./routes/NotFound";
+import Home from './routes/Home';
+import About from './routes/About';
 import Product from "./routes/Product";
-import Checkout from "./Checkout";
+import Checkout from "./routes/Checkout";
+import Favourites from './routes/Favourites';
 import Cart from './Cart'
-import Favourites from './Favourites'
 
 function App() {
 
